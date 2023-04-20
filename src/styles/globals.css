@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+/* font signature */
+@font-face { 
+  font-family: 'agustina';
+  src: url('/fonts/Agustina-Signature.otf') format('opentype');
+}
+
+@font-face { 
+  font-family: 'lobster';
+  src: url('/fonts/Lobster-Regular.ttf') format('opentype');
+}
+
+
+
+
+.heading-secondary {
+  @apply mb-8 text-3xl font-medium text-white capitalize sm:text-4xl sm:mb-12;
+}
+
+@layer base {
+  :root {
+    /* --color-bg: #fcfaf8; */
+    /* --color-accent: #14cf93; */
+    /* --color-accent: ##64ffda; */
+    /* --color-accent: #61dafb); */
+    /* --color-text: #383838; */
+    /* --color-dark-2: #282828; */
+    /* --color-dark-3: #a2a2a2; */
+
+    /* Light Theme */
+    /* --color-bg: bg-gradient-to-r from-green-500 to-blue-500; */
+    /* --color-bg: bg-gradient-to-r from-[theme(colors.green.500)] to-[theme(colors.slate.900)]; */
+    --color-accent: theme(colors.sky.500);
+    --color-accent-light: theme(colors.sky.500/0.1);
+    --color-text: theme(colors.white);
+    --color-dark-1: theme(colors.slate.900);
+    --color-dark-2: theme(colors.slate.700);
+    --color-dark-3: theme(colors.slate.300);
+  }
+
+  /* Dark Theme */
+  .dark {
+    --color-bg: theme(colors.slate.900);
+    --color-bg-secondary: theme(colors.slate.800);
+    --color-accent: theme(colors.sky.400);
+    --color-accent-light: theme(colors.sky.400/0.1);
+    --color-text: theme(colors.slate.400);
+    --color-dark-1: theme(colors.slate.200);
+    --color-dark-2: theme(colors.slate.300);
+    --color-dark-3: theme(colors.slate.700);
+  }
+
+  /* body{
+    @apply bg-gradient-to-r from-green-500 to-blue-500 ;
+  } */
+}
+
+@layer components{
+  .bodyStyle {
+      @apply bg-gradient-to-r from-green-500 to-blue-500    
+  }
+
+
+}
+
+
+
